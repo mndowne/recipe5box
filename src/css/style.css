@@ -1,0 +1,200 @@
+body {
+  background-color: #a0c8fa; }
+
+#titleBar {
+  font-size: 170%;
+  background-color: #dcd2fa;
+  height: 30px;
+  border-left: solid black;
+  border-top: solid black;
+  border-right: solid black;
+  text-align: center;
+  cursor: default;
+  border-radius: 60px 60px 0px 0px; }
+
+.dish {
+  font-size: 170%;
+  background-color: #e6b8e6;
+  height: 30px;
+  border: solid black;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 10px 10px 0px 0px; }
+  .dish p {
+    position: relative;
+    bottom: 28px; }
+  .dish:hover {
+    background-color: #c8a0fa; }
+  @media screen and (max-width: 650px) {
+    .dish {
+      font-size: 100%; }
+      .dish p {
+        bottom: 10px; } }
+
+.longDish {
+  font-size: 100%;
+  background-color: #e6b8e6;
+  height: 30px;
+  border: solid black;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 10px 10px 0px 0px; }
+  .longDish p {
+    position: relative;
+    bottom: 10px; }
+  .longDish:hover {
+    background-color: #c8a0fa; }
+  @media screen and (max-width: 650px) {
+    .longDish {
+      font-size: 70%; }
+      .longDish p {
+        bottom: 10px; } }
+
+.veryLongDish {
+  font-size: 100%;
+  background-color: #e6b8e6;
+  height: 30px;
+  border: solid black;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 10px 10px 0px 0px; }
+  .veryLongDish p {
+    position: relative;
+    bottom: 15px; }
+  .veryLongDish:hover {
+    background-color: #c8a0fa; }
+  @media screen and (max-width: 1200px) {
+    .veryLongDish {
+      font-size: 70%; }
+      .veryLongDish p {
+        bottom: 10px; } }
+  @media screen and (max-width: 600px) {
+    .veryLongDish {
+      height: 45px; } }
+
+.ingredients {
+  background-color: #dcd2fa;
+  position: relative;
+  bottom: 1px;
+  text-align: center;
+  padding-top: 1px;
+  padding-bottom: 0px;
+  border-left: solid black;
+  border-right: solid black; }
+  @media screen and (max-width: 500px) {
+    .ingredients {
+      font-size: 60%; } }
+
+.ingredientContainer {
+  background-color: #dcd2fa;
+  height: 10px;
+  position: relative;
+  z-index: -1;
+  margin-bottom: -10px;
+  bottom: 37px;
+  border-left: solid black;
+  border-right: solid black; }
+
+#delete {
+  display: inline-block;
+  height: 20px;
+  width: 50px;
+  border: solid red;
+  cursor: pointer;
+  margin-right: 10px;
+  border-radius: 9px; }
+  #delete:hover {
+    background-color: #c89696; }
+  @media screen and (max-width: 500px) {
+    #delete {
+      font-size: 120%;
+      height: 14px; } }
+
+#edit {
+  display: inline-block;
+  height: 20px;
+  width: 50px;
+  border: solid black;
+  cursor: pointer;
+  border-radius: 9px; }
+  #edit:hover {
+    background-color: #969696; }
+  @media screen and (max-width: 500px) {
+    #edit {
+      font-size: 120%;
+      height: 14px; } }
+
+#confirmChanges {
+  height: 20px;
+  width: 200px;
+  border: solid black;
+  cursor: pointer;
+  border-radius: 9px;
+  text-align: center;
+  margin: auto; }
+  #confirmChanges:hover {
+    background-color: #323296; }
+
+#abbandonChanges {
+  height: 20px;
+  width: 200px;
+  border: solid black;
+  cursor: pointer;
+  border-radius: 9px;
+  text-align: center;
+  margin: auto; }
+  #abbandonChanges:hover {
+    background-color: #323296; }
+
+#add {
+  height: 20px;
+  width: 100px;
+  border: solid black;
+  cursor: pointer;
+  position: relative;
+  top: 10px;
+  border-radius: 9px;
+  text-align: center;
+  margin: auto; }
+  #add:hover {
+    background-color: #969696; }
+
+#addRecipe {
+  height: 20px;
+  width: 200px;
+  border: solid black;
+  cursor: pointer;
+  border-radius: 9px;
+  text-align: center;
+  margin: auto; }
+  #addRecipe:hover {
+    background-color: #323296; }
+
+#abbandon {
+  height: 20px;
+  width: 200px;
+  border: solid black;
+  cursor: pointer;
+  border-radius: 9px;
+  text-align: center;
+  margin: auto; }
+  #abbandon:hover {
+    background-color: #323296; }
+
+#addMenu {
+  margin: auto;
+  background-color: #e6b8e6;
+  width: 270px;
+  border-radius: 25px;
+  border: solid black;
+  text-align: center; }
+
+#editMenu {
+  margin: auto;
+  background-color: #e6b8e6;
+  width: 270px;
+  border-radius: 25px;
+  border: solid black;
+  text-align: center; }
+
+/*# sourceMappingURL=style.css.map */
