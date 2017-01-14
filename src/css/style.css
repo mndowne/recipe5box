@@ -95,6 +95,19 @@ body {
   border-left: solid black;
   border-right: solid black; }
 
+.veryLongContainer {
+  background-color: #dcd2fa;
+  height: 10px;
+  position: relative;
+  z-index: -1;
+  margin-bottom: -10px;
+  bottom: 37px;
+  border-left: solid black;
+  border-right: solid black; }
+  @media screen and (max-width: 600px) {
+    .veryLongContainer {
+      bottom: 52px; } }
+
 #delete {
   display: inline-block;
   height: 20px;

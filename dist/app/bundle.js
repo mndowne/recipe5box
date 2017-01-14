@@ -281,6 +281,7 @@
 	
 	        _this4.editMenu;
 	        _this4.lengthClass;
+	        _this4.containerLength;
 	        return _this4;
 	    }
 	
@@ -340,10 +341,13 @@
 	        value: function lengthOfDish() {
 	            if (this.props.dish.length > 54) {
 	                this.lengthClass = "veryLongDish";
+	                this.containerLength = "veryLongContainer";
 	            } else if (this.props.dish.length > 24) {
 	                this.lengthClass = "longDish";
+	                this.containerLength = "ingredientContainer";
 	            } else {
 	                this.lengthClass = "dish";
+	                this.containerLength = "ingredientContainer";
 	            }
 	        }
 	    }, {
@@ -365,7 +369,7 @@
 	                            this.props.dish
 	                        )
 	                    ),
-	                    React.createElement('div', { className: 'ingredientContainer' }),
+	                    React.createElement('div', { className: this.containerLength }),
 	                    React.createElement(
 	                        'div',
 	                        { className: 'ingredients', style: this.state.display },

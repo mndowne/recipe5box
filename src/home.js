@@ -147,6 +147,7 @@ class Recipe extends React.Component {
 
         this.editMenu;
         this.lengthClass;
+        this.containerLength;
     }
 
     handleToggle(){
@@ -200,12 +201,15 @@ class Recipe extends React.Component {
     lengthOfDish(){
         if (this.props.dish.length > 54){
             this.lengthClass = "veryLongDish";
+            this.containerLength = "veryLongContainer";
         }
         else if (this.props.dish.length > 24){
             this.lengthClass = "longDish";
+            this.containerLength = "ingredientContainer";
         }
         else{
             this.lengthClass = "dish";
+            this.containerLength = "ingredientContainer";
         }
     }
 
@@ -215,7 +219,7 @@ class Recipe extends React.Component {
                 <div>
                 <div style={this.props.editHide}>
                 <div className={this.lengthClass} onClick={this.handleToggle}><p>{this.props.dish}</p></div>
-                <div className="ingredientContainer"></div>
+                <div className={this.containerLength}></div>
                 <div className="ingredients" style={this.state.display} >
                 {this.seperateIngredients()}
                 <div id="delete" onClick={this.deleteDish}>Delete</div>
