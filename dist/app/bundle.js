@@ -161,7 +161,7 @@
 	                React.createElement(
 	                    'div',
 	                    null,
-	                    'Ingredients'
+	                    'Add ingredients, seperated by commas'
 	                ),
 	                React.createElement(Input, { value: this.ingredient, changeValue: this.changeValueI }),
 	                React.createElement(
@@ -245,7 +245,7 @@
 	                React.createElement(
 	                    'div',
 	                    null,
-	                    'Ingredients'
+	                    'Edit ingredients, seperated by comma\'s'
 	                ),
 	                React.createElement(Input, { value: this.ingredient, changeValue: this.changeValueI }),
 	                React.createElement(

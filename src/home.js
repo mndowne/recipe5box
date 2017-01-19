@@ -73,7 +73,7 @@ class AddMenu extends React.Component {
                 <h3>Add a new Recipe</h3>
                 <div>Dish Name</div>
                 <Input value={this.dish} changeValue={this.changeValue} />
-                <div>Ingredients</div>
+                <div>Add ingredients, seperated by commas</div>
                 <Input value={this.ingredient} changeValue={this.changeValueI}/>
                 <div id="addRecipe" onClick={this.confirmAdd}>Add Recipe</div>
                 <div id="abbandon" onClick={this.abbandon}>Abbandon Recipe</div>
@@ -127,7 +127,7 @@ class Edit extends React.Component {
                 <div id="editMenu">
                 <h3>Edit {this.props.dish}</h3>
                 <Input value={this.dish} changeValue={this.changeValue} />
-                <div>Ingredients</div>
+                <div>Edit ingredients, seperated by comma's</div>
                 <Input value={this.ingredient} changeValue={this.changeValueI}/>
                 <div id="confirmChanges" onClick={this.confirmEdit}>Confirm Changes</div>
                 <div id="abbandonChanges" onClick={this.abbandon}>Abbandon Changes</div>
